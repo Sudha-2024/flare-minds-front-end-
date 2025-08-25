@@ -1,0 +1,46 @@
+:root { font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;      /* ensures body takes full height */
+  margin: 0;
+  padding: 0;
+}
+body { background-image: url('../src/images/back.avif'); /* replace with your image URL */
+  background-size: cover;        /* makes image cover entire page */
+  background-position: center;   /* centers image */
+  background-repeat: no-repeat;  /* prevents repeating */
+  margin: 1%;                     /* remove default margin */
+  font-family: sans-serif;       /* optional */ }
+
+.nav {
+  display:flex; align-items:center; justify-content:space-between;
+  background:#86ADD9; padding:12px 18px; border-bottom:1px solid #eaeaea; position:sticky; top:0;
+}
+.brand { font-weight:700; }
+.links a, .right a { margin-right:14px; text-decoration:none; color:#333; }
+.right { display:flex; align-items:center; gap:10px; }
+.welcome { font-size:0.9rem; color:#666; }
+.btn { padding:8px 14px; border-radius:8px; border:1px solid #ddd; background:#fff; cursor:pointer; }
+.btn:hover { background:#f1f1f1; }
+
+.container { padding:24px; max-width:900px; margin:0 auto; }
+.card {
+  background:#86ADD9; border:1px solid #eee; border-radius:12px; padding:20px; box-shadow:0 6px 20px rgba(0,0,0,0.04);
+}
+.center { text-align:center; }
+
+.form { display:flex; flex-direction:column; gap:10px; }
+.form input { padding:10px; border:1px solid #ddd; border-radius:8px; }
+.error { background:#ffe9e9; color:#a40000; padding:8px; border-radius:8px; border:1px solid #ffcaca; }
+.muted { color:#666; font-size:0.9rem; }
+
+.tabs { display:flex; gap:8px;  justify-content: center; margin-bottom:20px; }
+.tabs button { border:1px solid #ddd; background:#fff; padding:6px 12px; border-radius:999px; cursor:pointer; }
+.tabs .active { background:#000; color:#fff; border-color:#000; }
+
+.list { display:flex; flex-direction:column; gap:10px; }
+.list-item { display:flex; gap:12px; align-items:center; border:1px solid #eee; border-radius:10px; padding:10px; }
+.avatar { width:36px; height:36px; border-radius:50%; background:#eee; display:grid; place-items:center; font-weight:700; }
+.title { font-weight:600; }
+.sub { color:#666; font-size:0.9rem; }
+
